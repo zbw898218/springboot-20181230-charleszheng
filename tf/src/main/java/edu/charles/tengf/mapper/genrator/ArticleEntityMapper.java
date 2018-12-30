@@ -3,7 +3,6 @@ package edu.charles.tengf.mapper.genrator;
 import edu.charles.tengf.base.mapper.handler.ForeignKeyObjectTypeHandler;
 import edu.charles.tengf.entity.ArticleEntity;
 import edu.charles.tengf.entity.ArticleEntityExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.DeleteProvider;
 import org.apache.ibatis.annotations.Insert;
@@ -17,6 +16,8 @@ import org.apache.ibatis.annotations.SelectProvider;
 import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.annotations.UpdateProvider;
 import org.apache.ibatis.type.JdbcType;
+
+import java.util.List;
 
 public interface ArticleEntityMapper {
     /**

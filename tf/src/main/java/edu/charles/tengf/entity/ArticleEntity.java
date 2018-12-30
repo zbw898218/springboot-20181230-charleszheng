@@ -1,6 +1,7 @@
 package edu.charles.tengf.entity;
 
 import edu.charles.tengf.base.ForeignKeyObject;
+
 import java.util.Date;
 
 public class ArticleEntity implements ForeignKeyObject {

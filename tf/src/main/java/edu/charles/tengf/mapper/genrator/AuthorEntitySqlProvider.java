@@ -1,12 +1,13 @@
 package edu.charles.tengf.mapper.genrator;
 
 import edu.charles.tengf.entity.AuthorEntity;
+import edu.charles.tengf.entity.AuthorEntityExample;
 import edu.charles.tengf.entity.AuthorEntityExample.Criteria;
 import edu.charles.tengf.entity.AuthorEntityExample.Criterion;
-import edu.charles.tengf.entity.AuthorEntityExample;
+import org.apache.ibatis.jdbc.SQL;
+
 import java.util.List;
 import java.util.Map;
-import org.apache.ibatis.jdbc.SQL;
 
 public class AuthorEntitySqlProvider {
 

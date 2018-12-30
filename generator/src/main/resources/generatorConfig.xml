@@ -307,10 +307,10 @@
             <property name="modelOnly" value="false"/>
 
             <!-- 参考 javaModelGenerator 的 rootClass 属性-->
-            <property name="rootClass" value="com.creyond.cp.base.ForeignKeyObject"/>
+            <property name="rootClass" value="edu.charles.tengf.base.ForeignKeyObject"/>
 
             <!-- 参考javaClientGenerator 的  rootInterface 属性
-            <property name="rootInterface" value="com.creyond.cp.base.ForeignKeyObject"/>-->
+            <property name="rootInterface" value="edu.charles.tengf.base.ForeignKeyObject"/>-->
 
 
             <!-- 如果设置了runtimeCatalog，那么在生成的SQL中，使用该指定的catalog，而不是table元素上的catalog
@@ -539,10 +539,10 @@
             <property name="modelOnly" value="false"/>
 
             <!-- 参考 javaModelGenerator 的 rootClass 属性-->
-            <property name="rootClass" value="com.creyond.cp.base.ForeignKeyObject"/>
+            <property name="rootClass" value="edu.charles.tengf.base.ForeignKeyObject"/>
 
             <!-- 参考javaClientGenerator 的  rootInterface 属性
-            <property name="rootInterface" value="com.creyond.cp.base.ForeignKeyObject"/>-->
+            <property name="rootInterface" value="edu.charles.tengf.base.ForeignKeyObject"/>-->
 
 
             <!-- 如果设置了runtimeCatalog，那么在生成的SQL中，使用该指定的catalog，而不是table元素上的catalog

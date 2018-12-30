@@ -1,6 +1,7 @@
 package edu.charles.tengf.entity;
 
 import edu.charles.tengf.domain.SexEnum;
+
 import java.util.Date;
 
 public class UserEntity {
