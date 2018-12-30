@@ -1,6 +1,6 @@
 package edu.charles.tengf.base.mapper.handler;
 
-import com.creyond.cp.base.ForeignKeyObject;
+import edu.charles.tengf.base.ForeignKeyObject;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 
