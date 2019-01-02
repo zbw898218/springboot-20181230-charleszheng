@@ -9,7 +9,7 @@
         url：配置资源加载地质，使用URL的方式，比如file:///C:/myfolder/generatorConfig.properties.
         注意，两个属性只能选址一个;
 
-        另外，如果使用了mybatis-tengf-maven-plugin，那么在pom.xml中定义的properties都可以直接在generatorConfig.xml中使用
+        另外，如果使用了mybatis-tf-maven-plugin，那么在pom.xml中定义的properties都可以直接在generatorConfig.xml中使用
     <properties resource="" url="" />
      -->
 
@@ -79,7 +79,7 @@
             targetPackage：生成的类要放的包，真实的包受enableSubPackages属性控制；
             targetProject：目标项目，指定一个存在的目录下，生成的内容会放到指定目录中，如果目录不存在，MBG不会自动建目录
          -->
-        <javaModelGenerator targetPackage="edu.charles.tengf.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="edu.charles.tf.entity" targetProject="src/main/java">
             <!--  for MyBatis3/MyBatis3Simple
                 自动为每一个生成的类创建一个构造方法，构造方法包含了所有的field；而不是使用setter；
              -->
@@ -112,7 +112,7 @@
                 或者只使用Mapper接口+Annotation，所以，如果 javaClientGenerator配置中配置了需要生成XML的话，这个元素就必须配置
             targetPackage/targetProject:同javaModelGenerator
          -->
-        <sqlMapGenerator targetPackage="edu.charles.tengf.mapper.genrator" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="edu.charles.tf.mapper.genrator" targetProject="src/main/resources">
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
@@ -126,7 +126,7 @@
                 3，XMLMAPPER：会生成Mapper接口，接口完全依赖XML；
             注意，如果context是MyBatis3Simple：只支持ANNOTATEDMAPPER和XMLMAPPER
         -->
-        <javaClientGenerator targetPackage="edu.charles.tengf.mapper.genrator" type="ANNOTATEDMAPPER"
+        <javaClientGenerator targetPackage="edu.charles.tf.mapper.genrator" type="ANNOTATEDMAPPER"
                              targetProject="src/main/java">
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
             <property name="enableSubPackages" value="false"/>
@@ -238,8 +238,8 @@
             <generatedKey column="id" sqlStatement="JDBC"/>
 
             <columnOverride column="sex" jdbcType="CHAR" property="sex"
-                            javaType="edu.charles.tengf.domain.SexEnum"
-                            typeHandler="edu.charles.tengf.base.mapper.handler.EnumValueTypeHandler"/>
+                            javaType="edu.charles.tf.domain.SexEnum"
+                            typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
             <!--
                 该元素会在根据表中列名计算对象属性名之前先重命名列名，非常适合用于表中的列都有公用的前缀字符串的时候，
                 比如列名为：CUST_ID,CUST_NAME,CUST_EMAIL,CUST_ADDRESS等；
@@ -307,10 +307,10 @@
             <property name="modelOnly" value="false"/>
 
             <!-- 参考 javaModelGenerator 的 rootClass 属性-->
-            <property name="rootClass" value="edu.charles.tengf.base.ForeignKeyObject"/>
+            <property name="rootClass" value="edu.charles.tf.base.ForeignKeyObject"/>
 
             <!-- 参考javaClientGenerator 的  rootInterface 属性
-            <property name="rootInterface" value="edu.charles.tengf.base.ForeignKeyObject"/>-->
+            <property name="rootInterface" value="edu.charles.tfse.ForeignKeyObject"/>-->
 
 
             <!-- 如果设置了runtimeCatalog，那么在生成的SQL中，使用该指定的catalog，而不是table元素上的catalog
@@ -368,8 +368,8 @@
              -->
 
             <columnOverride column="sex" jdbcType="CHAR" property="sex"
-                            javaType="edu.charles.tengf.domain.SexEnum"
-                            typeHandler="edu.charles.tengf.base.mapper.handler.EnumValueTypeHandler"/>
+                            javaType="edu.charles.tf.domain.SexEnum"
+                            typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
             <!-- 用来修改表中某个列的属性，MBG会使用修改后的列来生成domain的属性；
                 column:要重新设置的列名；
                 注意，一个table元素中可以有多个columnOverride元素哈~
@@ -539,10 +539,10 @@
             <property name="modelOnly" value="false"/>
 
             <!-- 参考 javaModelGenerator 的 rootClass 属性-->
-            <property name="rootClass" value="edu.charles.tengf.base.ForeignKeyObject"/>
+            <property name="rootClass" value="edu.charles.tf.base.ForeignKeyObject"/>
 
             <!-- 参考javaClientGenerator 的  rootInterface 属性
-            <property name="rootInterface" value="edu.charles.tengf.base.ForeignKeyObject"/>-->
+            <property name="rootInterface" value="edu.charles.tfse.ForeignKeyObject"/>-->
 
 
             <!-- 如果设置了runtimeCatalog，那么在生成的SQL中，使用该指定的catalog，而不是table元素上的catalog
@@ -600,12 +600,12 @@
              -->
 
             <columnOverride column="author_id" jdbcType="BIGINT" property="author"
-                            javaType="edu.charles.tengf.entity.AuthorEntity"
-                            typeHandler="edu.charles.tengf.base.mapper.handler.ForeignKeyObjectTypeHandler"/>
+                            javaType="edu.charles.tf.entity.AuthorEntity"
+                            typeHandler="edu.charles.tf.base.mapper.handler.ForeignKeyObjectTypeHandler"/>
 
             <columnOverride column="tag_id" jdbcType="BIGINT" property="tags"
-                            javaType="edu.charles.tengf.entity.TagsEntity"
-                            typeHandler="edu.charles.tengf.base.mapper.handler.ForeignKeyObjectTypeHandler"/>
+                            javaType="edu.charles.tf.entity.TagsEntity"
+                            typeHandler="edu.charles.tf.base.mapper.handler.ForeignKeyObjectTypeHandler"/>
             <!-- 用来修改表中某个列的属性，MBG会使用修改后的列来生成domain的属性；
                 column:要重新设置的列名；
                 注意，一个table元素中可以有多个columnOverride元素哈~

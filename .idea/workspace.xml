@@ -2,45 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e12b90-ab23-4501-b72c-69a2472b889b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ValueEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/domain/SexEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntityExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntityExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/GeneratorApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/GeneratorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/GeneratorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/ForeignKeyObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ValueEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ValueEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/ValueEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/domain/SexEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/domain/SexEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/domain/SexEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/ArticleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/ArticleEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/AuthorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/AuthorEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/TagsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/TagsEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/UserEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/AuthorEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/AuthorEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/TagsEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/TagsEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/UserEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/UserEntitySqlProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/test/java/edu/charles/tengf/GeneratorApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/test/java/edu/charles/tengf/GeneratorApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/test/java/edu/charles/tf/GeneratorApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/TengfApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/TengfApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/TengfApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ForeignKeyObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ValueEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ValueEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ValueEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/domain/SexEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/domain/SexEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/domain/SexEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/ArticleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/ArticleEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/AuthorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/AuthorEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/TagsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/TagsEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntityExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/UserEntityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/AuthorEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/AuthorEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/TagsEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/TagsEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/UserEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/UserEntitySqlProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/test/java/edu/charles/tengf/TengfApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/src/test/java/edu/charles/tengf/TengfApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tf/src/test/java/edu/charles/tf/TengfApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,61 +110,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ArticleEntitySqlProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="TagsEntityMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorEntityMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorEntitySqlProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="ArticleEntityMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="UserEntitySqlProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="UserEntityMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="TagsEntitySqlProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleEntityExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java">
+        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntityMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleEntity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntity.java">
+      <file leaf-file-name="ArticleEntityMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntityMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1628">
+              <caret line="90" column="81" selection-start-line="90" selection-start-column="81" selection-end-line="90" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForeignKeyObjectTypeHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/mapper/handler/ForeignKeyObjectTypeHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForeignKeyObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ForeignKeyObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValueEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ValueEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForeignKeyObjectTypeHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/ForeignKeyObjectTypeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="11" selection-start-line="11" selection-end-line="15" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForeignKeyObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/ForeignKeyObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValueEnum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/ValueEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnumValueTypeHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnumValueTypeHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,8 +238,6 @@
         <option value="$PROJECT_DIR$/tf/pom.xml" />
         <option value="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/dao.java" />
         <option value="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/TengfApplication.java" />
-        <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ValueEnum.java" />
-        <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java" />
         <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/domain/SexEnum.java" />
         <option value="$PROJECT_DIR$/generator/pom.xml" />
         <option value="$PROJECT_DIR$/generator/src/main/resources/generatorConfig.xml" />
@@ -147,6 +245,14 @@
         <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntity.java" />
         <option value="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java" />
         <option value="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java" />
+        <option value="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java" />
+        <option value="$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ValueEnum.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ValueEnum.java" />
+        <option value="$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/ValueEnum.java" />
       </list>
     </option>
   </component>
@@ -173,7 +279,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-12" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -185,7 +291,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -227,7 +332,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
+              <item name="tf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
@@ -236,8 +341,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="tf" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
@@ -246,41 +351,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
+              <item name="tf" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
               <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="genrator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
               <item name="tf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,7 +387,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
+              <item name="tf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
@@ -320,8 +396,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="tf" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
@@ -330,36 +406,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tengf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
               <item name="tf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tengf" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/工作/示例代码/IDEAProjects/cy-cp1.4" />
+    <property name="last_opened_file_path" value="E:/IdeaProject/ssms125" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -432,7 +500,7 @@
     </configuration>
     <configuration name="TengfApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tf" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.charles.tengf.TengfApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.charles.tf.TengfApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -471,7 +539,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546150731598</updated>
-      <workItem from="1546150737373" duration="9164000" />
+      <workItem from="1546150737373" duration="10612000" />
+      <workItem from="1546166173126" duration="1000" />
+      <workItem from="1546166180948" duration="22000" />
+      <workItem from="1546166337844" duration="107000" />
+      <workItem from="1546392353358" duration="1137000" />
     </task>
     <task id="LOCAL-00001" summary="新增逆向工程">
       <created>1546160959914</created>
@@ -487,46 +559,61 @@
       <option name="project" value="LOCAL" />
       <updated>1546161092158</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增文件">
+      <created>1546163144698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546163144698</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更新">
+      <created>1546163963118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546163963118</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9164000" />
+    <option name="totallyTimeSpent" value="11879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3137931" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32931036" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2977099" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info id="Web" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3137931" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32931036" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31068704" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931036" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,29 +625,55 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增逆向工程" />
     <MESSAGE value="删除错误文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除错误文件" />
+    <MESSAGE value="新增文件" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/dao.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/ForeignKeyObjectTypeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/TengfApplication.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/TengfApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ValueEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/generatorConfig-oss.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/dao.java" />
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/generatorConfig-oss.xml" />
     <entry file="file://$PROJECT_DIR$/generator/执行语句.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -568,39 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ValueEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-400">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/generatorConfig-auth.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="723" column="106" selection-start-line="721" selection-start-column="11" selection-end-line="723" selection-end-column="106" />
-          <folding>
-            <element signature="e#3432#4612#0" />
-            <element signature="e#8303#13226#0" />
-            <element signature="e#10166#11187#0" />
-            <element signature="e#11262#11776#0" />
-            <element signature="e#13236#18464#0" />
-            <element signature="e#18474#23009#0" />
-            <element signature="e#23019#29038#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/generatorConfig-auth.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -622,35 +703,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1320">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edu_charles.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/src/main/resources/generator.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/domain/SexEnum.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/domain/SexEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" selection-start-line="6" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -667,178 +729,201 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntity.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/ArticleEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/ArticleEntityExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1632#1633#0" expanded="true" />
-            <element signature="e#1668#1669#0" expanded="true" />
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1947#1948#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
-            <element signature="e#2706#2707#0" expanded="true" />
-            <element signature="e#2748#2749#0" expanded="true" />
-            <element signature="e#4843#4844#0" expanded="true" />
-            <element signature="e#4888#4889#0" expanded="true" />
-            <element signature="e#5817#5818#0" expanded="true" />
-            <element signature="e#5860#5861#0" expanded="true" />
-            <element signature="e#7299#7300#0" expanded="true" />
-            <element signature="e#7338#7339#0" expanded="true" />
-            <element signature="e#25715#25716#0" expanded="true" />
-            <element signature="e#25746#25747#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/AuthorEntity.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/AuthorEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2610#2611#0" expanded="true" />
-            <element signature="e#2638#2639#0" expanded="true" />
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#3234#3235#0" expanded="true" />
-            <element signature="e#3295#3296#0" expanded="true" />
-            <element signature="e#3572#3573#0" expanded="true" />
-            <element signature="e#3598#3599#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3914#3915#0" expanded="true" />
-            <element signature="e#4191#4192#0" expanded="true" />
-            <element signature="e#4217#4218#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#4533#4534#0" expanded="true" />
-            <element signature="e#4815#4816#0" expanded="true" />
-            <element signature="e#4843#4844#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
-            <element signature="e#5202#5203#0" expanded="true" />
-            <element signature="e#5502#5503#0" expanded="true" />
-            <element signature="e#5536#5537#0" expanded="true" />
-            <element signature="e#6240#6241#0" expanded="true" />
-            <element signature="e#6273#6274#0" expanded="true" />
-            <element signature="e#6593#6594#0" expanded="true" />
-            <element signature="e#6637#6638#0" expanded="true" />
-            <element signature="e#6934#6935#0" expanded="true" />
-            <element signature="e#6967#6968#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntity.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/TagsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntity.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/UserEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/TagsEntityExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tengf/entity/UserEntityExample.java">
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/entity/UserEntityExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/ForeignKeyObjectTypeHandler.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/domain/SexEnum.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ValueEnum.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/AuthorEntity.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/mapper/handler/EnumValueTypeHandler.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/TagsEntityExample.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/base/ForeignKeyObject.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/UserEntityExample.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/domain/SexEnum.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/TagsEntity.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntity.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/UserEntity.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntityExample.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/AuthorEntityExample.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntityExample.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntitySqlProvider.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/TagsEntity.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/TagsEntityMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/UserEntity.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/AuthorEntitySqlProvider.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/AuthorEntityExample.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/UserEntitySqlProvider.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntitySqlProvider.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/UserEntityMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntityMapper.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/TagsEntitySqlProvider.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntityMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/AuthorEntitySqlProvider.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/ArticleEntityMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntitySqlProvider.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/UserEntityMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/mapper/genrator/TagsEntitySqlProvider.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntityExample.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/ArticleEntityExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tengf/entity/ArticleEntity.java">
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/entity/ArticleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/TengfApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/AuthorEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/mapper/genrator/ArticleEntityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="90" column="81" selection-start-line="90" selection-start-column="81" selection-end-line="90" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/mapper/handler/ForeignKeyObjectTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ForeignKeyObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/edu/charles/tf/base/ValueEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/EnumValueTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/mapper/handler/ForeignKeyObjectTypeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="11" selection-start-line="11" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/ForeignKeyObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/src/main/java/edu/charles/tf/base/ValueEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
