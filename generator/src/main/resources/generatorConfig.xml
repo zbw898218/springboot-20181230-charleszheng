@@ -17,7 +17,7 @@
         location属性指明加载jar/zip包的全路径
         -->
     <classPathEntry
-            location="D:/dev/mvn/mysql/mysql-connector-java/5.1.42/mysql-connector-java-5.1.42.jar"/>
+            location="D:/dev/mvn/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar"/>
 
 
     <!--
@@ -52,7 +52,8 @@
         <!-- 必须要有的，使用这个配置链接数据库
             @TODO:是否可以扩展
          -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/edu_charles"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/edu_charles?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC"
                         userId="root" password="898218">
             <!-- 这里面可以设置property属性，每一个property属性都设置到配置的Driver上 -->
         </jdbcConnection>
@@ -240,6 +241,8 @@
             <columnOverride column="sex" jdbcType="CHAR" property="sex"
                             javaType="edu.charles.tf.domain.SexEnum"
                             typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
+            <!--<columnOverride column="description" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+            <!--<columnOverride column="name" javaType="java.lang.String" jdbcType="VARCHAR" />-->
             <!--
                 该元素会在根据表中列名计算对象属性名之前先重命名列名，非常适合用于表中的列都有公用的前缀字符串的时候，
                 比如列名为：CUST_ID,CUST_NAME,CUST_EMAIL,CUST_ADDRESS等；
@@ -332,7 +335,7 @@
             <property name="selectAllOrderByClause" value="age desc,username asc"/>
 
             <property name="selectAllOrderByClause" />
--->
+    -->
             <!-- 如果设置为true，生成的model类会直接使用column本身的名字，而不会再使用驼峰命名方法，比如BORN_DATE，生成的属性名字就是BORN_DATE,而不会是bornDate -->
             <property name="useActualColumnNames" value="false"/>
 
@@ -380,7 +383,7 @@
             <!-- 使用property属性来指定列要生成的属性名称 -->
             <!--
                 <property name="property" value="userName"/>
--->
+    -->
             <!-- javaType用于指定生成的domain的属性类型，使用类型的全限定名
             <property name="javaType" value=""/>
              -->
@@ -400,7 +403,7 @@
              -->
             <!--
             </columnOverride>
--->
+    -->
             <!-- ignoreColumn设置一个MGB忽略的列，如果设置了改列，那么在生成的domain中，生成的SQL中，都不会有该列出现
                 column:指定要忽略的列的名字；
                 delimitedColumnName：参考table元素的delimitAllColumns配置，默认为false
@@ -564,7 +567,7 @@
             <property name="selectAllOrderByClause" value="age desc,username asc"/>
 
             <property name="selectAllOrderByClause" />
--->
+    -->
             <!-- 如果设置为true，生成的model类会直接使用column本身的名字，而不会再使用驼峰命名方法，比如BORN_DATE，生成的属性名字就是BORN_DATE,而不会是bornDate -->
             <property name="useActualColumnNames" value="false"/>
 
@@ -616,7 +619,7 @@
             <!-- 使用property属性来指定列要生成的属性名称 -->
             <!--
                 <property name="property" value="userName"/>
--->
+    -->
             <!-- javaType用于指定生成的domain的属性类型，使用类型的全限定名
             <property name="javaType" value=""/>
              -->
@@ -636,7 +639,7 @@
              -->
             <!--
             </columnOverride>
--->
+    -->
             <!-- ignoreColumn设置一个MGB忽略的列，如果设置了改列，那么在生成的domain中，生成的SQL中，都不会有该列出现
                 column:指定要忽略的列的名字；
                 delimitedColumnName：参考table元素的delimitAllColumns配置，默认为false
