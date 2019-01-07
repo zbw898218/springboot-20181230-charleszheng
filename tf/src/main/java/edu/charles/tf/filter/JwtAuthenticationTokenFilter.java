@@ -2,6 +2,7 @@ package edu.charles.tf.filter;
 
 import edu.charles.tf.base.util.RequestUtil;
 import edu.charles.tf.domain.UserAgent;
+import edu.charles.tf.service.JwtService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -57,7 +58,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
                 UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
 
-                if (jwtService.validateToken(authToken, userDetails, userAgent)) {
+                if (jwtService.validateToken(authToken, userDetails)) {
                     UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
                             userDetails, null, userDetails.getAuthorities());
                     authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(

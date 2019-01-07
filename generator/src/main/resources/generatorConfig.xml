@@ -358,11 +358,14 @@
                     JDBC      :相当于在生成的insert元素上添加useGeneratedKeys="true"和keyProperty属性
                      -->
             <generatedKey column="id" sqlStatement="JDBC"/>
-            <columnOverride column="type" jdbcType="CHAR" property="type"
+            <columnOverride column="type" jdbcType="TINYINT" property="type"
                             javaType="edu.charles.tf.domain.TypeEnum"
                             typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
-            <columnOverride column="sex" jdbcType="CHAR" property="sex"
+            <columnOverride column="sex" jdbcType="TINYINT" property="sex"
                             javaType="edu.charles.tf.domain.SexEnum"
+                            typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
+            <columnOverride column="phase" jdbcType="TINYINT" property="phase"
+                            javaType="edu.charles.tf.domain.PhaseEnum"
                             typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
             <!--<columnOverride column="description" javaType="java.lang.String" jdbcType="VARCHAR" />-->
             <!--<columnOverride column="name" javaType="java.lang.String" jdbcType="VARCHAR" />-->
@@ -493,7 +496,7 @@
             <columnRenamingRule searchString="" replaceString=""/>
              -->
 
-            <columnOverride column="sex" jdbcType="CHAR" property="sex"
+            <columnOverride column="sex" jdbcType="TINYINT" property="sex"
                             javaType="edu.charles.tf.domain.SexEnum"
                             typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
             <!-- 用来修改表中某个列的属性，MBG会使用修改后的列来生成domain的属性；
