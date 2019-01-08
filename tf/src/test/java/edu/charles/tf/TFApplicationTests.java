@@ -14,7 +14,7 @@ import java.util.Date;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TengfApplicationTests {
+public class TFApplicationTests {
     @Autowired
     private CustomerService customerService;
 
