@@ -1,6 +1,6 @@
 package edu.charles.tf.entity;
 
-import edu.charles.tf.domain.SexEnum;
+import edu.charles.tf.enums.SexEnum;
 
 import java.util.ArrayList;
 import java.util.Date;

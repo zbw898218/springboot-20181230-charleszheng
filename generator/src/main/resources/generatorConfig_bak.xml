@@ -238,10 +238,10 @@
                      -->
             <generatedKey column="id" sqlStatement="JDBC"/>
             <columnOverride column="type" jdbcType="CHAR" property="type"
-                            javaType="edu.charles.tf.domain.TypeEnum"
+                            javaType="edu.charles.tf.enums.TypeEnum"
                             typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
             <columnOverride column="sex" jdbcType="CHAR" property="sex"
-                            javaType="edu.charles.tf.domain.SexEnum"
+                            javaType="edu.charles.tf.enums.SexEnum"
                             typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
             <!--<columnOverride column="description" javaType="java.lang.String" jdbcType="VARCHAR" />-->
             <!--<columnOverride column="name" javaType="java.lang.String" jdbcType="VARCHAR" />-->
@@ -373,7 +373,7 @@
              -->
 
             <columnOverride column="sex" jdbcType="CHAR" property="sex"
-                            javaType="edu.charles.tf.domain.SexEnum"
+                            javaType="edu.charles.tf.enums.SexEnum"
                             typeHandler="edu.charles.tf.base.mapper.handler.EnumValueTypeHandler"/>
             <!-- 用来修改表中某个列的属性，MBG会使用修改后的列来生成domain的属性；
                 column:要重新设置的列名；

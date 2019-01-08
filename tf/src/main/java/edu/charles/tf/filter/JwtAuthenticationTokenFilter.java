@@ -1,10 +1,9 @@
 package edu.charles.tf.filter;
 
-import edu.charles.tf.base.util.RequestUtil;
-import edu.charles.tf.domain.UserAgent;
-import edu.charles.tf.service.JwtService;
+import edu.charles.tf.auth.service.JwtService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,6 +27,7 @@ import java.io.IOException;
  */
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
     @Autowired
+    @Qualifier("customerUserDetailService")
     private UserDetailsService userDetailsService;
 
     @Autowired
@@ -36,7 +36,9 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
     @Value("${jwt.header}")
     private String tokenHeader;
 
-    @Value("${jwt.token.head}")
+    private String tokenHead;
+
+    @Value("${security.key}")
     private String securityKey;
 
     @Override
@@ -44,30 +46,61 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
             HttpServletRequest request,
             HttpServletResponse response,
             FilterChain chain) throws ServletException, IOException {
-        UserAgent userAgent = RequestUtil.getUserAgent(request);
-        String authToken = request.getHeader(this.tokenHeader);
+        String authToken = request.getHeader(tokenHeader);
         if (StringUtils.isNoneBlank(authToken)) {
-            String username = null;
+            String account = null;
             try {
-                username = jwtService.getUserName(authToken);
+                account = jwtService.getCustomerAccount(authToken);
             } catch (Exception e) {
                 logger.error("jwt auToken: " + authToken + " is error!", e);
             }
 
-            if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+            if (account != null && SecurityContextHolder.getContext().getAuthentication() == null) {
 
-                UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
+                UserDetails userDetails = this.userDetailsService.loadUserByUsername(account);
 
-                if (jwtService.validateToken(authToken, userDetails)) {
+                if (null != userDetails && jwtService.validateToken(authToken, userDetails)) {
                     UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
                             userDetails, null, userDetails.getAuthorities());
                     authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(
                             request));
-                    logger.info("authenticated user " + username + ", setting security context");
+                    logger.info("authenticated user:" + account + ", setting security context");
                     SecurityContextHolder.getContext().setAuthentication(authentication);
                 }
             }
         }
         chain.doFilter(request, response);
+    }
+
+    public UserDetailsService getUserDetailsService() {
+        return userDetailsService;
+    }
+
+    public void setUserDetailsService(UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
+
+    public String getTokenHeader() {
+        return tokenHeader;
+    }
+
+    public void setTokenHeader(String tokenHeader) {
+        this.tokenHeader = tokenHeader;
+    }
+
+    public String getSecurityKey() {
+        return securityKey;
+    }
+
+    public void setSecurityKey(String securityKey) {
+        this.securityKey = securityKey;
+    }
+
+    public String getTokenHead() {
+        return tokenHead;
+    }
+
+    public void setTokenHead(String tokenHead) {
+        this.tokenHead = tokenHead;
     }
 }

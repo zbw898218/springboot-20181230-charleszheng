@@ -1,7 +1,7 @@
 package edu.charles.tf;
 
-import edu.charles.tf.domain.SexEnum;
-import edu.charles.tf.domain.TypeEnum;
+import edu.charles.tf.enums.SexEnum;
+import edu.charles.tf.enums.TypeEnum;
 import edu.charles.tf.entity.CustomerEntity;
 import edu.charles.tf.service.CustomerService;
 import org.junit.Test;

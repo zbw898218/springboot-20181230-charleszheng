@@ -1,7 +1,7 @@
 package edu.charles.tf.entity;
 
 import edu.charles.tf.base.ForeignKeyObject;
-import edu.charles.tf.domain.SexEnum;
+import edu.charles.tf.enums.SexEnum;
 
 import java.util.Date;
 

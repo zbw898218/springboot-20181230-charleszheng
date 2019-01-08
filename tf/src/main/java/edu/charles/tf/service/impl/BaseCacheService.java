@@ -1,23 +1,18 @@
-/**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
- * FileName: BaseCacheService.java
- * Author:   Zhengbiwu(18061259)
- * Date:     2019/1/7 17:25
- * Description: 模块目的、功能描述
- * History:
- * &lt;author&gt;      &lt;time&gt;      &lt;version&gt;    &lt;desc&gt;
- * 修改人姓名             修改时间            版本号                  描述
- */
 package edu.charles.tf.service.impl;
 
 import edu.charles.tf.base.util.WorkThread;
-import edu.charles.tf.domain.Token;
-import edu.charles.tf.mapper.TokenMapper;
+import edu.charles.tf.domain.CustomToken;
+import edu.charles.tf.domain.Customer;
+import edu.charles.tf.mapper.CustomTokenMapper;
+import edu.charles.tf.mapper.CustomerMapper;
 import edu.charles.tf.service.CacheService;
+import edu.charles.tf.service.CustomerTokenService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -31,11 +26,18 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Service("baseCacheService")
 public class BaseCacheService extends WorkThread implements CacheService {
-    private static Map<String, String> cacheToken = new ConcurrentHashMap<>();
+    private static Map<String, CustomToken> cacheToken = new ConcurrentHashMap<>();
 
     @Autowired
-    private TokenMapper tokenMapper;
+    private CustomTokenMapper customTokenMapper;
+    @Autowired
+    private CustomerTokenService customerTokenService;
+    @Autowired
+    private CustomerMapper customerMapper;
 
+    @Value("${customToken.expire.time}")
+    private long tokenExpireTime;
+    //10分钟刷新一次
     private static final long default_refresh_time = 10 * 60000l;
 
     @PostConstruct
@@ -56,26 +58,47 @@ public class BaseCacheService extends WorkThread implements CacheService {
     }
 
     private void load() {
-        List<Token> tokens = tokenMapper.selectAll();
-        if (null != tokens && !tokens.isEmpty()) {
-            for (Token token : tokens) {
-                cacheToken.put(token.getCustomer().getName(), token.getToken());
+        List<CustomToken> customTokens = customTokenMapper.selectAll();
+        if (null != customTokens && !customTokens.isEmpty()) {
+            for (CustomToken customToken : customTokens) {
+                Customer customer = customerMapper.selectById(customToken.getCustomer().getId());
+                cacheToken.put(customer.getAccount(), customToken);
             }
         }
     }
 
     @Override
     public String get(String key) {
-        return cacheToken.get(key);
+        CustomToken customToken;
+        if (cacheToken.containsKey(key)) {
+            customToken = cacheToken.get(key);
+            return customToken.getToken();
+        } else {
+            List<Customer> list = customerMapper.selectByAccount(key);
+            if (null == list || list.isEmpty()) {
+                return null;
+            }
+            Customer customer = list.get(0);
+            customToken = customTokenMapper.selectByCustomerId(customer.getId());
+            return customToken.getToken();
+        }
     }
 
     @Override
-    public String put(String key, String value) {
-        return cacheToken.put(key, value);
+    public void put(String key, String token) {
+        CustomToken customToken = new CustomToken();
+        Customer customer = customerMapper.selectByAccount(key).get(0);
+        customToken.setCustomer(customer);
+        customToken.setCreateTime(new Date());
+        customToken.setUpdateTime(new Date());
+        customToken.setToken(token);
+        customerTokenService.updateToken(key, customToken);
+        cacheToken.put(key, customToken);
     }
 
     @Override
     public void del(String key) {
         cacheToken.remove(key);
+        customerTokenService.del(key);
     }
 }

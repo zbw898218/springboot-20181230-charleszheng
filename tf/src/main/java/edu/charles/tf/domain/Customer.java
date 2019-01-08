@@ -1,16 +1,8 @@
-/**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
- * FileName: Customer.java
- * Author:   Zhengbiwu(18061259)
- * Date:     2019/1/7 20:00
- * Description: 模块目的、功能描述
- * History:
- * &lt;author&gt;      &lt;time&gt;      &lt;version&gt;    &lt;desc&gt;
- * 修改人姓名             修改时间            版本号                  描述
- */
 package edu.charles.tf.domain;
 
 import edu.charles.tf.entity.CustomerEntity;
+import edu.charles.tf.enums.AuthorityEnum;
+import edu.charles.tf.enums.PhaseEnum;
 import org.springframework.beans.BeanUtils;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -38,19 +30,14 @@ public class Customer extends CustomerEntity implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
-        SimpleGrantedAuthority authority = new SimpleGrantedAuthority(AuthorityEnum.NORMAL.name());
+        SimpleGrantedAuthority authority = new SimpleGrantedAuthority(AuthorityEnum.CUSTOMER.name());
         authorities.add(authority);
         return authorities;
     }
 
     @Override
-    public String getPassword() {
-        return null;
-    }
-
-    @Override
     public String getUsername() {
-        return null;
+        return super.getAccount();
     }
 
     @Override

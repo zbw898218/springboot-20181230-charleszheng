@@ -15,7 +15,7 @@ public interface CacheService {
 
     String get(String key);
 
-    String put(String key, String value);
+    void put(String key, String value);
 
     void del(String key);
 }
